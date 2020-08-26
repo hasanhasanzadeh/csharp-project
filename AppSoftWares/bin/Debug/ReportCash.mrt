@@ -1,0 +1,1122 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <SQLCompany Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>SQLCompany</Alias>
+        <ConnectionStringEncrypted>9Fz7z8ZWQ935CE2Y6RzgY9F40YlIS6Ok4k3tvcPsoC+LcLMLS22rzW9aNcxpSWIjw1b3ScZdMdVqRJxYd1yxF+Na2S9OAzEF6FGEzOVM417EcPsJzUxDmcxr</ConnectionStringEncrypted>
+        <Name>SQLCompany</Name>
+      </SQLCompany>
+    </Databases>
+    <DataSources isList="true" count="15">
+      <Cash_Ex_Table Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Cash_Ex_Table</Alias>
+        <Columns isList="true" count="11">
+          <value>id,System.Int32</value>
+          <value>factor_id,System.Int32</value>
+          <value>deposit,System.Decimal</value>
+          <value>removal,System.Decimal</value>
+          <value>stock,System.Decimal</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>description,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Cash_Ex_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.Cash_Ex_Table</NameInSource>
+      </Cash_Ex_Table>
+      <Cash_Table Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Cash_Table</Alias>
+        <Columns isList="true" count="13">
+          <value>id,System.Int32</value>
+          <value>factor_id,System.Int32</value>
+          <value>cash_name,System.String</value>
+          <value>bestan,System.Decimal</value>
+          <value>bedeh,System.Decimal</value>
+          <value>stock,System.Decimal</value>
+          <value>currency,System.String</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>description,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Cash_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.Cash_Table</NameInSource>
+      </Cash_Table>
+      <Company_Table Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Company_Table</Alias>
+        <Columns isList="true" count="9">
+          <value>id,System.Int32</value>
+          <value>company_name,System.String</value>
+          <value>company_number,System.String</value>
+          <value>company_user,System.String</value>
+          <value>company_address,System.String</value>
+          <value>description,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Company_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.Company_Table</NameInSource>
+      </Company_Table>
+      <Driver_Table Ref="6" type="DataTableSource" isKey="true">
+        <Alias>Driver_Table</Alias>
+        <Columns isList="true" count="10">
+          <value>id,System.Int32</value>
+          <value>driver_name,System.String</value>
+          <value>truck_number,System.String</value>
+          <value>driver_phone,System.String</value>
+          <value>code_meli,System.String</value>
+          <value>address,System.String</value>
+          <value>description,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Driver_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.Driver_Table</NameInSource>
+      </Driver_Table>
+      <Enter_Table Ref="7" type="DataTableSource" isKey="true">
+        <Alias>Enter_Table</Alias>
+        <Columns isList="true" count="13">
+          <value>id,System.Int32</value>
+          <value>factor_id,System.Int32</value>
+          <value>driver_id,System.Int32</value>
+          <value>weight,System.Decimal</value>
+          <value>product_id,System.Int32</value>
+          <value>cotash,System.String</value>
+          <value>bar_number,System.String</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>description,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Enter_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.Enter_Table</NameInSource>
+      </Enter_Table>
+      <Exit_Table Ref="8" type="DataTableSource" isKey="true">
+        <Alias>Exit_Table</Alias>
+        <Columns isList="true" count="16">
+          <value>id,System.Int32</value>
+          <value>factor_id,System.Int32</value>
+          <value>truck_ir,System.String</value>
+          <value>truck_irq,System.String</value>
+          <value>driver_phone,System.String</value>
+          <value>weight,System.Decimal</value>
+          <value>product_id,System.Int32</value>
+          <value>cotash,System.String</value>
+          <value>bar_number,System.String</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>customer,System.String</value>
+          <value>description,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Exit_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.Exit_Table</NameInSource>
+      </Exit_Table>
+      <Factor_Buy_Table Ref="9" type="DataTableSource" isKey="true">
+        <Alias>Factor_Buy_Table</Alias>
+        <Columns isList="true" count="13">
+          <value>factor_id,System.Int32</value>
+          <value>customer,System.String</value>
+          <value>currency,System.String</value>
+          <value>product_id,System.Int32</value>
+          <value>weight,System.Decimal</value>
+          <value>price,System.Decimal</value>
+          <value>price_sum,System.Decimal</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>description,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Factor_Buy_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.Factor_Buy_Table</NameInSource>
+      </Factor_Buy_Table>
+      <Factor_Sell_Table Ref="10" type="DataTableSource" isKey="true">
+        <Alias>Factor_Sell_Table</Alias>
+        <Columns isList="true" count="14">
+          <value>id,System.Int32</value>
+          <value>factor_id,System.Int32</value>
+          <value>customer,System.String</value>
+          <value>currency,System.String</value>
+          <value>product_id,System.Int32</value>
+          <value>weight,System.Decimal</value>
+          <value>price,System.Decimal</value>
+          <value>price_total,System.Decimal</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>description,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Factor_Sell_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.Factor_Sell_Table</NameInSource>
+      </Factor_Sell_Table>
+      <Product_Table Ref="11" type="DataTableSource" isKey="true">
+        <Alias>Product_Table</Alias>
+        <Columns isList="true" count="6">
+          <value>id,System.Int32</value>
+          <value>product_name,System.String</value>
+          <value>product_type,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Product_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.Product_Table</NameInSource>
+      </Product_Table>
+      <User_Table Ref="12" type="DataTableSource" isKey="true">
+        <Alias>User_Table</Alias>
+        <Columns isList="true" count="8">
+          <value>id,System.Int32</value>
+          <value>username,System.String</value>
+          <value>password,System.String</value>
+          <value>date_sh,System.String</value>
+          <value>actives,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>User_Table</Name>
+        <NameInSource>SoftWareDatabaseDataSet.User_Table</NameInSource>
+      </User_Table>
+      <View_Buy Ref="13" type="DataTableSource" isKey="true">
+        <Alias>View_Buy</Alias>
+        <Columns isList="true" count="11">
+          <value>product_type,System.String</value>
+          <value>product_name,System.String</value>
+          <value>customer,System.String</value>
+          <value>factor_id,System.Int32</value>
+          <value>currency,System.String</value>
+          <value>weight,System.Decimal</value>
+          <value>price,System.Decimal</value>
+          <value>price_sum,System.Decimal</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>description,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>View_Buy</Name>
+        <NameInSource>SoftWareDatabaseDataSet.View_Buy</NameInSource>
+      </View_Buy>
+      <View_Enter Ref="14" type="DataTableSource" isKey="true">
+        <Alias>View_Enter</Alias>
+        <Columns isList="true" count="12">
+          <value>factor_id,System.Int32</value>
+          <value>weight,System.Decimal</value>
+          <value>cotash,System.String</value>
+          <value>bar_number,System.String</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>description,System.String</value>
+          <value>product_name,System.String</value>
+          <value>product_type,System.String</value>
+          <value>driver_name,System.String</value>
+          <value>truck_number,System.String</value>
+          <value>driver_phone,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>View_Enter</Name>
+        <NameInSource>SoftWareDatabaseDataSet.View_Enter</NameInSource>
+      </View_Enter>
+      <View_Exit Ref="15" type="DataTableSource" isKey="true">
+        <Alias>View_Exit</Alias>
+        <Columns isList="true" count="13">
+          <value>factor_id,System.Int32</value>
+          <value>truck_ir,System.String</value>
+          <value>truck_irq,System.String</value>
+          <value>driver_phone,System.String</value>
+          <value>weight,System.Decimal</value>
+          <value>cotash,System.String</value>
+          <value>bar_number,System.String</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>customer,System.String</value>
+          <value>description,System.String</value>
+          <value>product_type,System.String</value>
+          <value>product_name,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>View_Exit</Name>
+        <NameInSource>SoftWareDatabaseDataSet.View_Exit</NameInSource>
+      </View_Exit>
+      <View_Sell Ref="16" type="DataTableSource" isKey="true">
+        <Alias>View_Sell</Alias>
+        <Columns isList="true" count="11">
+          <value>customer,System.String</value>
+          <value>factor_id,System.Int32</value>
+          <value>currency,System.String</value>
+          <value>weight,System.Decimal</value>
+          <value>price,System.Decimal</value>
+          <value>price_total,System.Decimal</value>
+          <value>date_sh,System.String</value>
+          <value>date_m,System.String</value>
+          <value>description,System.String</value>
+          <value>product_name,System.String</value>
+          <value>product_type,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>View_Sell</Name>
+        <NameInSource>SoftWareDatabaseDataSet.View_Sell</NameInSource>
+      </View_Sell>
+      <Company_Table2 Ref="17" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>Company_Table2</Alias>
+        <Columns isList="true" count="9">
+          <value>id,System.Int32</value>
+          <value>company_name,System.String</value>
+          <value>company_number,System.String</value>
+          <value>company_address,System.String</value>
+          <value>company_user,System.String</value>
+          <value>description,System.String</value>
+          <value>plus_1,System.String</value>
+          <value>plus_2,System.String</value>
+          <value>plus_3,System.Decimal</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>Company_Table2</Name>
+        <NameInSource>SQLCompany</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from Company_Table</SqlCommand>
+      </Company_Table2>
+    </DataSources>
+    <Relations isList="true" count="10">
+      <Factor_Buy_Table Ref="18" type="DataRelation" isKey="true">
+        <Alias>Factor_Buy_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ChildColumns>
+        <ChildSource isRef="3" />
+        <Dictionary isRef="1" />
+        <Name>Factor_Buy_Table</Name>
+        <NameInSource>FK_Cash_Ex_Table_Factor_Buy_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ParentColumns>
+        <ParentSource isRef="9" />
+      </Factor_Buy_Table>
+      <Factor_Buy_Table Ref="19" type="DataRelation" isKey="true">
+        <Alias>Factor_Buy_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ChildColumns>
+        <ChildSource isRef="4" />
+        <Dictionary isRef="1" />
+        <Name>Factor_Buy_Table</Name>
+        <NameInSource>FK_Cash_Table_Factor_Buy_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ParentColumns>
+        <ParentSource isRef="9" />
+      </Factor_Buy_Table>
+      <Driver_Table Ref="20" type="DataRelation" isKey="true">
+        <Alias>Driver_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>driver_id</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>Driver_Table</Name>
+        <NameInSource>FK_Enter_Table_Driver_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>id</value>
+        </ParentColumns>
+        <ParentSource isRef="6" />
+      </Driver_Table>
+      <Factor_Buy_Table Ref="21" type="DataRelation" isKey="true">
+        <Alias>Factor_Buy_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>Factor_Buy_Table</Name>
+        <NameInSource>FK_Enter_Table_Factor_Buy_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ParentColumns>
+        <ParentSource isRef="9" />
+      </Factor_Buy_Table>
+      <Product_Table Ref="22" type="DataRelation" isKey="true">
+        <Alias>Product_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>product_id</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>Product_Table</Name>
+        <NameInSource>FK_Enter_Table_Product_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>id</value>
+        </ParentColumns>
+        <ParentSource isRef="11" />
+      </Product_Table>
+      <Factor_Buy_Table Ref="23" type="DataRelation" isKey="true">
+        <Alias>Factor_Buy_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ChildColumns>
+        <ChildSource isRef="8" />
+        <Dictionary isRef="1" />
+        <Name>Factor_Buy_Table</Name>
+        <NameInSource>FK_Exit_Table_Factor_Buy_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ParentColumns>
+        <ParentSource isRef="9" />
+      </Factor_Buy_Table>
+      <Product_Table Ref="24" type="DataRelation" isKey="true">
+        <Alias>Product_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>product_id</value>
+        </ChildColumns>
+        <ChildSource isRef="8" />
+        <Dictionary isRef="1" />
+        <Name>Product_Table</Name>
+        <NameInSource>FK_Exit_Table_Product_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>id</value>
+        </ParentColumns>
+        <ParentSource isRef="11" />
+      </Product_Table>
+      <Product_Table Ref="25" type="DataRelation" isKey="true">
+        <Alias>Product_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>product_id</value>
+        </ChildColumns>
+        <ChildSource isRef="9" />
+        <Dictionary isRef="1" />
+        <Name>Product_Table</Name>
+        <NameInSource>FK_Factor_Buy_Table_Product_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>id</value>
+        </ParentColumns>
+        <ParentSource isRef="11" />
+      </Product_Table>
+      <Factor_Buy_Table Ref="26" type="DataRelation" isKey="true">
+        <Alias>Factor_Buy_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ChildColumns>
+        <ChildSource isRef="10" />
+        <Dictionary isRef="1" />
+        <Name>Factor_Buy_Table</Name>
+        <NameInSource>FK_Factor_Sell_Table_Factor_Buy_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>factor_id</value>
+        </ParentColumns>
+        <ParentSource isRef="9" />
+      </Factor_Buy_Table>
+      <Product_Table Ref="27" type="DataRelation" isKey="true">
+        <Alias>Product_Table</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>product_id</value>
+        </ChildColumns>
+        <ChildSource isRef="10" />
+        <Dictionary isRef="1" />
+        <Name>Product_Table</Name>
+        <NameInSource>FK_Factor_Sell_Table_Product_Table</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>id</value>
+        </ParentColumns>
+        <ParentSource isRef="11" />
+      </Product_Table>
+    </Relations>
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="2">
+      <value>Date</value>
+      <value>Date,ShamsiDate,ShamsiDate,,System.String,,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="28" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="7">
+        <PageHeaderBand1 Ref="29" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,0.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text3 Ref="30" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,0.2,4.2,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="28" />
+              <Parent isRef="29" />
+              <Text>{Company_Table2.company_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="31" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,9.62,7.72,0.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text1 Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,0.08,1.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,12</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="28" />
+              <Parent isRef="31" />
+              <Text>{PageNumber}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+        </PageFooterBand1>
+        <HeaderBand1 Ref="33" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,1.2,7.72,0.5</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text2 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.1,0,1.1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="28" />
+              <Parent isRef="33" />
+              <Text>{ShamsiDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text4 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,0.2,1.9,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="28" />
+              <Parent isRef="33" />
+              <Text>گزارش صندوق
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+        </HeaderBand1>
+        <ColumnHeaderBand1 Ref="36" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2.1,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="10">
+            <Text5 Ref="37" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.4,0,0.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>ردیف
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="38" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.9,0,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <Guid>7c67d6fed5794138954cccb476755d09</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>شماره فاکتور</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text8 Ref="39" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.3,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Guid>c9db70db7dc2422c924c3e1771aba9c7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>نام صندوق
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="40" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Guid>9b40ffd13008472487847d0ee29980a1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>بستانکار
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text10 Ref="41" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Guid>9c810c1d7e0b41ab92cf699a8b8ef7ac</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>بدهکار
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="42" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Guid>4fb3147425e446fab0df439366884029</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>مانده
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="43" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.1,0,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Guid>0bda91b229af424c80be7f324f48d80c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>نوع ارز
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="44" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.3,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Guid>7d3fa87c59c64ef0ada9a5beb3a34875</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>تاریخ شمسی</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text14 Ref="45" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.5,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Guid>482903245b524fa587f81fa85424cd72</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>تاریخ میلادی
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="46" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Guid>4786d2f2265e487595efe6a3cf7bdb95</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="28" />
+              <Parent isRef="36" />
+              <Text>توضیحات
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ColumnHeaderBand1</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+        </ColumnHeaderBand1>
+        <DataCash_Table Ref="47" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2.8,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="10">
+            <DataCash_Table_bestan Ref="48" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,1.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_bestan</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Cash_Table.description}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_bestan>
+            <DataCash_Table_bedeh Ref="49" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.5,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_bedeh</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Cash_Table.date_m}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_bedeh>
+            <DataCash_Table_stock Ref="50" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>2.3,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_stock</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Cash_Table.date_sh}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_stock>
+            <DataCash_Table_currency Ref="51" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.1,0,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_currency</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Cash_Table.currency}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_currency>
+            <DataCash_Table_date_sh Ref="52" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.6,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_date_sh</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Cash_Table.stock}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_date_sh>
+            <DataCash_Table_date_m Ref="53" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4.5,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_date_m</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Cash_Table.bedeh}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_date_m>
+            <DataCash_Table_description Ref="54" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.4,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_description</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Cash_Table.bestan}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_description>
+            <DataCash_Table_plus_1 Ref="55" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>6.3,0,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_plus_1</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Cash_Table.cash_name}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_plus_1>
+            <DataCash_Table_plus_2 Ref="56" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>6.9,0,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_plus_2</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Cash_Table.factor_id}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_plus_2>
+            <DataCash_Table_plus_3 Ref="57" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7.4,0,0.3,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataCash_Table_plus_3</Name>
+              <Page isRef="28" />
+              <Parent isRef="47" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataCash_Table_plus_3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Cash_Table</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataCash_Table</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+          <Sort isList="true" count="0" />
+        </DataCash_Table>
+        <ColumnFooterBand1 Ref="58" type="Stimulsoft.Report.Components.StiColumnFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.5,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text7 Ref="59" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="28" />
+              <Parent isRef="58" />
+              <Text>{Sum(Cash_Table.bestan)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text16 Ref="60" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="28" />
+              <Parent isRef="58" />
+              <Text>{Sum(Cash_Table.bedeh)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text17 Ref="61" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,8</Font>
+              <Guid>2c6a148cb3f142a7a9d379905e558a08</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="28" />
+              <Parent isRef="58" />
+              <Text>{Sum(Cash_Table.bestan)-Sum(Cash_Table.bedeh)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text18 Ref="62" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.3,0,1.4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>bec87b02c7824cc0b730f6913467a83d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="28" />
+              <Parent isRef="58" />
+              <Text>جمع کل</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ColumnFooterBand1</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+        </ColumnFooterBand1>
+        <FooterBand1 Ref="63" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.2,7.72,0.7</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text19 Ref="64" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.7,0.1,4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="28" />
+              <Parent isRef="63" />
+              <Text>آدرس :{Company_Table2.company_address}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text20 Ref="65" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.7,0.5,4,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="28" />
+              <Parent isRef="63" />
+              <Text>شماره تماس :{Company_Table2.company_number}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="66" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.3,3.2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="28" />
+              <Parent isRef="63" />
+              <Text>مدیر عامل : {Company_Table2.company_user}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="28" />
+          <Parent isRef="28" />
+        </FooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>e88cae28eb0c4dbe8f3cf605139c2fb8</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="67" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="68" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/6/2019 11:37:59 PM</ReportChanged>
+  <ReportCreated>11/6/2019 7:09:06 PM</ReportCreated>
+  <ReportFile />
+  <ReportGuid>56baf824de0b4460a804405b089e09b8</ReportGuid>
+  <ReportImage isNull="true" />
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2017.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
